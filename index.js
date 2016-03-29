@@ -2,6 +2,9 @@ function rightHere() {
     alert("Here we go!");
 }
 
-$('h1').hover(function() {
-    $(this).css("color", "yellow");
-});
+document.getElementById('message').onclick = changeColor;
+
+function message() {
+    document.body.style.color = "red";
+    return false;
+}
